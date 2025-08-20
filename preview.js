@@ -11,9 +11,8 @@
     const styles = `
         <style id="toolurpromo-ad-styles">
             #toolurpromo-ad-container {
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
+                position: relative;
+                display: inline-block;
                 z-index: 999999;
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             }
@@ -143,10 +142,6 @@
             }
             
             @media (max-width: 768px) {
-                #toolurpromo-ad-container {
-                    bottom: 10px;
-                    right: 10px;
-                }
                 .toolurpromo-ad {
                     width: 280px;
                     height: 350px;
@@ -167,13 +162,13 @@
             
             <div class="logo-section">
                 <div class="logo"></div>
-                <div class="brand-name">AIHumanizer.com</div>
+                <div class="brand-name">IndexRusher</div>
             </div>
             
-            <div class="headline">Humanize AI Text for Better SEO</div>
+            <div class="headline">Fast search engine indexing</div>
             
             <div class="description">
-                Transform AI content into natural, human-like writing that ranks higher. Perfect for students, professionals, and blogs that need human-like writing.
+                Drive more SEO traffic. Get your website indexed by Google, Bing, ChatGPT, X, and other search engines
             </div>
             
             <button class="cta-button">Try Now</button>
@@ -196,7 +191,7 @@
             console.log('ToolurPromo ad clicked');
             
             // Redirect to your landing page
-            window.open('https://aihumanizer.com/?ref=toolur', '_blank');
+            window.open('https://indexrusher.com', '_blank');
         }
     };
     
