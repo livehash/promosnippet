@@ -18,8 +18,8 @@
             }
             
             .toolurpromo-ad {
-                width: 320px;
-                height: 400px;
+                width: 300px;
+                height: 360px;
                 background: #ffffff;
                 border-radius: 12px;
                 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -46,7 +46,7 @@
             
             .toolurpromo-ad .logo-section {
                 position: absolute;
-                top: 60px;
+                top: 35px;
                 left: 20px;
                 display: flex;
                 align-items: center;
@@ -94,7 +94,7 @@
             
             .toolurpromo-ad .headline {
                 position: absolute;
-                top: 120px;
+                top: 90px;
                 left: 20px;
                 right: 20px;
                 font-size: 28px;
@@ -106,7 +106,7 @@
             
             .toolurpromo-ad .description {
                 position: absolute;
-                top: 210px;
+                top: 180px;
                 left: 20px;
                 right: 20px;
                 font-size: 15px;
@@ -117,7 +117,7 @@
             
             .toolurpromo-ad .cta-button {
                 position: absolute;
-                bottom: 30px;
+                bottom: 25px;
                 left: 20px;
                 right: 20px;
                 height: 50px;
@@ -168,7 +168,7 @@
             <div class="headline">Humanize AI Text for Better SEO</div>
             
             <div class="description">
-                Transform AI content into natural, human-like writing that ranks higher. Perfect for students, professionals, and blogs that need human-like writing.
+                Transform AI content into natural, human-like writing that ranks higher. Perfect for students, professionals, and blog writers.
             </div>
             
             <button class="cta-button">Try Now</button>
@@ -181,8 +181,14 @@
     // Set container content
     container.innerHTML = html;
     
-    // Append to body
-    document.body.appendChild(container);
+    // Insert the ad exactly where the script is placed (like in a widget section)
+    const currentScript = document.currentScript || (function() {
+        const scripts = document.getElementsByTagName('script');
+        return scripts[scripts.length - 1];
+    })();
+    
+    // Insert right after the current script tag
+    currentScript.parentNode.insertBefore(container, currentScript.nextSibling);
     
     // Create global handler object
     window.ToolurPromo = {
