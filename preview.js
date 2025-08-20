@@ -167,7 +167,7 @@
             
             <div class="logo-section">
                 <div class="logo"></div>
-                <div class="brand-name">IndexRusher</div>
+                <div class="brand-name">AIHumanizer.com</div>
             </div>
             
             <div class="headline">Fast search engine indexing</div>
@@ -196,7 +196,7 @@
             console.log('ToolurPromo ad clicked');
             
             // Redirect to your landing page
-            window.open('https://indexrusher.com', '_blank');
+            window.open('https://aihumanizer.com/', '_blank');
         }
     };
     
