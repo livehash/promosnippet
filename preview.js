@@ -162,13 +162,13 @@
             
             <div class="logo-section">
                 <div class="logo"></div>
-                <div class="brand-name">IndexRusher</div>
+                <div class="brand-name">AIHumanizer.com</div>
             </div>
             
-            <div class="headline">Fast search engine indexing</div>
+            <div class="headline">Humanize AI Text for Better SEO</div>
             
             <div class="description">
-                Drive more SEO traffic. Get your website indexed by Google, Bing, ChatGPT, X, and other search engines
+                Transform AI content into natural, human-like writing that ranks higher. Perfect for students, professionals, and blogs that need human-like writing.
             </div>
             
             <button class="cta-button">Try Now</button>
@@ -191,7 +191,7 @@
             console.log('ToolurPromo ad clicked');
             
             // Redirect to your landing page
-            window.open('https://indexrusher.com', '_blank');
+            window.open('https://aihumanizer.com/?toolur', '_blank');
         }
     };
     
